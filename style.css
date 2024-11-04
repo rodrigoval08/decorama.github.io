@@ -1,0 +1,673 @@
+/* Estilos generales del encabezado */
+.header {
+    background-color: #f8f8f8;
+    /* Color de fondo */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra del encabezado */
+    padding: 10px 0;
+    position: sticky;
+    /* Para mantener el encabezado fijo en la parte superior */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 90px;
+    width: auto;
+}
+
+.nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li a {
+    color: #7913d8c6;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #ffffff;
+    /* Cambia de color al pasar el mouse */
+}
+
+#login-button,
+#cart-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+#login-button:hover,
+#cart-button:hover {
+    background-color: #ed0987;
+    /* Color de fondo al pasar el mouse */
+}
+
+/* Fondo de imagen y personalización para el encabezado */
+.header {
+    background-color: #18b1cc;
+    /* Cambia esto si usas una imagen */
+    background-image: url('https://media.revistaad.es/photos/6332e3540fec8fa36d3e88e6/16:9/w_2560%2Cc_limit/Westwing%2520x%2520Leandra%2520Medine%2520(30).jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 15px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Estilos del menú de navegación y botones */
+.nav-menu a {
+    color: #333;
+    font-weight: bold;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#login-button,
+#cart-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+#login-button:hover,
+#cart-button:hover {
+    background-color: #cc5200;
+}
+
+/* Estilos para la sección de Inicio */
+.inicio {
+    background-image: url('https://www.culmia.com/blog/wp-content/uploads/2022/08/Jardines-verticales-1.jpg');
+    /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.inicio-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Fondo semitransparente */
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.inicio h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+.inicio p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* Estilos para la sección de Nosotros */
+.nosotros {
+    background-image: url('https://www.evento.love/blog/wp-content/uploads/2018/11/tendencias-decoracion-eventos-5.jpg');
+    /* URL de la imagen */
+    background-color: #e9ecef;
+    /* Color de fondo */
+    padding: 50px 0;
+    /* Espaciado superior e inferior */
+    text-align: center;
+    /* Centrar el texto */
+}
+
+.image-grid {
+    display: flex;
+    /* Usar Flexbox para la cuadrícula de imágenes */
+    justify-content: center;
+    /* Centrar las imágenes */
+    flex-wrap: wrap;
+    /* Permitir que las imágenes se envuelvan en varias filas */
+}
+
+.nosotros-image {
+    max-width: 30%;
+    /* Tamaño máximo de cada imagen */
+    height: auto;
+    /* Mantener la proporción de la imagen */
+    margin: 10px;
+    /* Espacio entre las imágenes */
+}
+
+.nosotros h2 {
+    color: #fff;
+    /* Color del encabezado */
+}
+
+.nosotros p {
+    color: #ffffff;
+    /* Color del texto */
+    max-width: 800px;
+    /* Ancho máximo del párrafo */
+    margin: 0 auto;
+    /* Centrar el párrafo */
+}
+
+/* Opcional: añadir estilo para imágenes o gráficos */
+.nosotros img {
+    max-width: 100%;
+    /* Asegurar que la imagen no exceda el ancho del contenedor */
+    height: auto;
+    /* Mantener la proporción de la imagen */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    margin-top: 20px;
+    /* Espaciado encima de la imagen */
+}
+
+/* Estilos para la sección de Productos */
+.productos {
+    background-color: #ffffff;
+    /* Fondo blanco */
+    padding: 60px 20px;
+    text-align: center;
+    /* Centrar texto */
+}
+
+.productos h2 {
+    font-size: 2em;
+    font-weight: 700;
+    /* Negrita para el título */
+    margin-bottom: 40px;
+    /* Espaciado debajo del título */
+    color: #333;
+    /* Color del texto del título */
+}
+
+.product-grid {
+    display: grid;
+    /* Usar cuadrícula para el diseño de productos */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Columnas flexibles */
+    gap: 20px;
+    /* Espaciado entre las tarjetas */
+    justify-items: center;
+    /* Centrar tarjetas horizontalmente */
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    /* Color de fondo de la tarjeta */
+    border: 1px solid #ddd;
+    /* Bordes ligeros */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    padding: 20px;
+    text-align: center;
+    /* Centrar contenido de la tarjeta */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Efecto suave al pasar el mouse */
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    /* Levantar la tarjeta al pasar el mouse */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    /* Añadir sombra al pasar el mouse */
+}
+
+.product-card img {
+    max-width: 100%;
+    /* Asegurar que la imagen no exceda el ancho de la tarjeta */
+    height: auto;
+    /* Mantener la proporción de la imagen */
+    border-radius: 5px;
+    /* Bordes redondeados para la imagen */
+}
+
+.product-card h3 {
+    font-size: 1.5em;
+    /* Tamaño de fuente para el nombre del producto */
+    margin: 15px 0 10px;
+    /* Espaciado alrededor del nombre */
+    color: #333;
+    /* Color del texto del nombre */
+}
+
+.product-card p {
+    font-size: 1.2em;
+    /* Tamaño de fuente para el precio */
+    margin: 0 0 15px;
+    /* Espaciado debajo del precio */
+    color: #ff6600;
+    /* Color del precio */
+}
+
+.add-to-cart {
+    background-color: #ff6600;
+    /* Color de fondo del botón */
+    color: #fff;
+    /* Color del texto del botón */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    padding: 10px 15px;
+    /* Espaciado interno del botón */
+    font-size: 1em;
+    /* Tamaño de fuente del botón */
+    cursor: pointer;
+    /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease;
+    /* Efecto suave al cambiar el color */
+}
+
+.add-to-cart:hover {
+    background-color: #cc5200;
+    /* Color del botón al pasar el mouse */
+}
+
+
+/* Estilos para la sección de Servicios */
+.servicios {
+    background-color: #f9f9f9;
+    /* Color de fondo suave */
+    padding: 60px 20px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Centrar texto */
+}
+
+.servicios h2 {
+    font-size: 2em;
+    /* Tamaño de fuente para el título */
+    font-weight: 700;
+    /* Negrita para el título */
+    margin-bottom: 20px;
+    /* Espaciado debajo del título */
+    color: #333;
+    /* Color del texto del título */
+}
+
+.servicios p {
+    font-size: 1.2em;
+    /* Tamaño de fuente para el párrafo */
+    line-height: 1.6;
+    /* Espaciado entre líneas */
+    margin: 0 auto;
+    /* Centrar el párrafo */
+    max-width: 800px;
+    /* Ancho máximo del párrafo */
+    color: #555;
+    /* Color del texto del párrafo */
+}
+
+/* Opcional: estilo para iconos o imágenes de servicios */
+.servicios .service-icons {
+    display: flex;
+    /* Usar flexbox para alinear iconos */
+    justify-content: center;
+    /* Centrar iconos */
+    margin-top: 40px;
+    /* Espacio superior */
+    gap: 20px;
+    /* Espaciado entre iconos */
+}
+
+.service-icon {
+    background-color: #fff;
+    /* Fondo blanco para los iconos */
+    border: 1px solid #ddd;
+    /* Borde ligero */
+    border-radius: 50%;
+    /* Bordes redondeados */
+    width: 80px;
+    /* Ancho de los iconos */
+    height: 80px;
+    /* Altura de los iconos */
+    display: flex;
+    /* Usar flexbox para centrar el contenido */
+    align-items: center;
+    /* Centrar verticalmente */
+    justify-content: center;
+    /* Centrar horizontalmente */
+    transition: box-shadow 0.3s ease;
+    /* Suavizar la sombra */
+}
+
+.service-icon:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra al pasar el mouse */
+}
+
+.service-icon img {
+    max-width: 50%;
+    /* Ajustar imagen al icono */
+    height: auto;
+    /* Mantener proporción de imagen */
+}
+
+
+/* Estilos para la sección de Contacto */
+.contacto {
+    background-color: #ffffff;
+    /* Color de fondo blanco */
+    padding: 60px 20px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Centrar texto */
+}
+
+.contacto h2 {
+    font-size: 2em;
+    /* Tamaño de fuente para el título */
+    font-weight: 700;
+    /* Negrita para el título */
+    margin-bottom: 30px;
+    /* Espaciado debajo del título */
+    color: #333;
+    /* Color del texto del título */
+}
+
+.contacto form {
+    max-width: 600px;
+    /* Ancho máximo del formulario */
+    margin: 0 auto;
+    /* Centrar el formulario */
+    display: flex;
+    /* Usar flexbox para organizar los elementos del formulario */
+    flex-direction: column;
+    /* Organizar en columna */
+    gap: 15px;
+    /* Espaciado entre los elementos */
+}
+
+.contacto label {
+    font-size: 1em;
+    /* Tamaño de fuente para las etiquetas */
+    color: #555;
+    /* Color del texto de las etiquetas */
+    text-align: left;
+    /* Alinear etiquetas a la izquierda */
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto input[type="tel"],
+.contacto textarea {
+    padding: 10px;
+    /* Espaciado interno de los campos */
+    border: 1px solid #ddd;
+    /* Borde ligero */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    font-size: 1em;
+    /* Tamaño de fuente de los campos */
+    color: #333;
+    /* Color del texto de los campos */
+}
+
+.contacto textarea {
+    resize: vertical;
+    /* Permitir redimensionar solo verticalmente */
+    min-height: 100px;
+    /* Altura mínima del área de texto */
+}
+
+.contacto button {
+    background-color: #ff6600;
+    /* Color de fondo del botón */
+    color: #fff;
+    /* Color del texto del botón */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    padding: 10px 15px;
+    /* Espaciado interno del botón */
+    font-size: 1em;
+    /* Tamaño de fuente del botón */
+    cursor: pointer;
+    /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease;
+    /* Suavizar el color de fondo */
+}
+
+.contacto button:hover {
+    background-color: #cc5200;
+    /* Color del botón al pasar el mouse */
+}
+
+/* Estilos para el mapa */
+.map {
+    margin-top: 40px;
+    /* Espaciado superior del mapa */
+}
+
+.map iframe {
+    width: 100%;
+    /* Ancho completo del mapa */
+    height: 300px;
+    /* Altura del mapa */
+    border: none;
+    /* Sin borde */
+    border-radius: 8px;
+    /* Bordes redondeados para el mapa */
+}
+
+
+/* Estilos para el modal de Carrito */
+.cart-modal {
+    display: none;
+    /* Ocultar modal por defecto */
+    position: fixed;
+    /* Posicionar el modal */
+    z-index: 1000;
+    /* Colocarlo sobre otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Ancho completo */
+    height: 100%;
+    /* Altura completa */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo oscuro y semi-transparente */
+}
+
+/* Contenido del modal */
+.cart-modal-content {
+    background-color: #ffffff;
+    /* Fondo blanco para el contenido */
+    margin: 15% auto;
+    /* Margen en la parte superior y centrado */
+    padding: 20px;
+    border-radius: 8px;
+    /* Bordes redondeados */
+    max-width: 500px;
+    /* Ancho máximo del contenido */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    position: relative;
+    /* Para posicionar el botón de cerrar */
+}
+
+/* Botón de cerrar */
+#close-cart {
+    position: absolute;
+    /* Posicionar en la esquina superior derecha */
+    top: 10px;
+    right: 15px;
+    font-size: 1.5em;
+    /* Tamaño de fuente para el botón de cerrar */
+    color: #333;
+    /* Color del texto */
+    cursor: pointer;
+    /* Cambiar cursor al pasar sobre el botón */
+}
+
+/* Título del modal */
+.cart-modal h2 {
+    font-size: 1.8em;
+    /* Tamaño de fuente para el título */
+    margin: 0 0 15px;
+    /* Espaciado debajo del título */
+    color: #333;
+    /* Color del texto del título */
+}
+
+/* Lista de productos en el carrito */
+#cart-items {
+    list-style-type: none;
+    /* Sin viñetas */
+    padding: 0;
+    /* Sin espaciado */
+    margin: 20px 0;
+    /* Espaciado superior e inferior */
+}
+
+/* Estilo para cada ítem en el carrito */
+#cart-items li {
+    border-bottom: 1px solid #ddd;
+    /* Línea divisoria entre ítems */
+    padding: 10px 0;
+    /* Espaciado interno para los ítems */
+    display: flex;
+    /* Usar flexbox para alinear contenido */
+    justify-content: space-between;
+    /* Espaciado entre nombre y precio */
+}
+
+/* Total del carrito */
+#cart-total {
+    font-weight: bold;
+    /* Resaltar el total */
+}
+
+/* Botón de proceder al pago */
+#checkout-button {
+    background-color: #ff6600;
+    /* Color de fondo del botón */
+    color: #fff;
+    /* Color del texto del botón */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    padding: 10px 15px;
+    /* Espaciado interno del botón */
+    font-size: 1em;
+    /* Tamaño de fuente del botón */
+    cursor: pointer;
+    /* Cambiar cursor al pasar sobre el botón */
+    margin-top: 20px;
+    /* Espacio superior para el botón */
+    transition: background-color 0.3s ease;
+    /* Efecto suave al cambiar el color */
+}
+
+#checkout-button:hover {
+    background-color: #cc5200;
+    /* Color del botón al pasar el mouse */
+}
+
+
+
+
+
+
+/* Estilos para el carrusel */
+.carousel {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.carousel-inner {
+    display: none;
+}
+
+.carousel-page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 30%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Controles del carrusel */
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.carousel-controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-controls button:hover {
+    background-color: #0056b3;
+}
